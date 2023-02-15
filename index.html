@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="inner">
+            <div>
+            <h1 class="head1">Generate A </h1>
+            <h1 class="head2">Random Password</h1>
+            <label>Never use an insecure password again.</label>
+            </div>
+            <label id="elen" for="enter-len">Enter Length: </label>
+            <input type="number" id="length-el" name="len"><br><br>
+            <label id="all">All</label>
+            <input type="checkbox" id="useAll-el">
+            <label id="Sym">Symbols</label>
+            <input type="checkbox" id="symbols-el">
+            <label id="Num">Numbers</label>
+            <input type="checkbox" id="numbers-el">
+            <button onclick="randomPass()">Generate Password</button>
+            <img src="refreshIcon.png" onclick="refreshPass()">
+            <hr></hr>
+            <div>
+                <p id="password-el1"></p>
+                <p id="password-el2"></p>
+            </div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
